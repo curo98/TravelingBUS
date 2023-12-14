@@ -1,0 +1,1359 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".ChairSelectionActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#673AB7"
+        android:orientation="vertical">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center_horizontal"
+            android:padding="10dp"
+            android:text="Selecciona el asiento"
+            android:textColor="@color/white" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="horizontal"
+            android:paddingStart="50dp"
+            android:paddingEnd="50dp">
+
+            <TextView
+                android:id="@+id/tvOrigin"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:text="Huaral"
+                android:textColor="@color/white"
+                android:textSize="15sp" />
+
+            <ImageView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:layout_weight="1"
+                android:src="@drawable/ic_compare_arrows" />
+
+            <TextView
+                android:id="@+id/tvDestination"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:text="Lima"
+                android:textColor="@color/white"
+                android:textSize="15sp" />
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/tvDate"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center_horizontal"
+            android:padding="10dp"
+            android:text="Fecha"
+            android:textColor="@color/white" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <androidx.cardview.widget.CardView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="10dp"
+            app:cardCornerRadius="5dp">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="5dp"
+                android:orientation="vertical">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+
+                    <LinearLayout
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:orientation="vertical">
+
+                        <TextView
+                            android:id="@+id/tvNameBus"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:gravity="center_horizontal"
+                            android:text="PeruBuss"
+                            android:textSize="13sp"
+                            android:textStyle="bold" />
+
+                        <com.airbnb.lottie.LottieAnimationView
+                            android:layout_width="match_parent"
+                            android:layout_height="80dp"
+                            app:lottie_autoPlay="true"
+                            app:lottie_fileName="bus_anim.json"
+                            app:lottie_imageAssetsFolder="assets"
+                            app:lottie_loop="true"></com.airbnb.lottie.LottieAnimationView>
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:orientation="vertical"
+                        android:layout_gravity="center_vertical">
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:orientation="horizontal">
+
+                            <LinearLayout
+                                android:layout_width="0dp"
+                                android:layout_height="wrap_content"
+                                android:layout_gravity="center"
+                                android:layout_weight="1"
+                                android:gravity="center">
+
+                                <ImageView
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:src="@drawable/ic_chair" />
+                            </LinearLayout>
+
+                            <LinearLayout
+                                android:layout_width="0dp"
+                                android:layout_height="wrap_content"
+                                android:layout_weight="1"
+                                android:orientation="vertical">
+
+                                <TextView
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:text="25 asientos"
+                                    android:textSize="10dp" />
+
+                                <TextView
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:text="25 Ventanas"
+                                    android:textSize="10dp" />
+                            </LinearLayout>
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:orientation="vertical"
+                            android:paddingTop="10dp">
+
+                            <TextView
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:gravity="center"
+                                android:text="00:30 - 05:00"
+                                android:textSize="10dp" />
+
+                            <TextView
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:gravity="center"
+                                android:text="4h 30min"
+                                android:textSize="10dp" />
+                        </LinearLayout>
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:layout_weight="1"
+                        android:orientation="vertical">
+
+                        <androidx.cardview.widget.CardView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginStart="10dp"
+                            android:layout_marginEnd="10dp"
+                            app:cardBackgroundColor="#DCD8E3"
+                            app:cardCornerRadius="10dp">
+
+                            <TextView
+                                android:id="@+id/tvPrice"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:gravity="center"
+                                android:padding="15dp"
+                                android:text="S/. 50" />
+                        </androidx.cardview.widget.CardView>
+                    </LinearLayout>
+                </LinearLayout>
+            </LinearLayout>
+        </androidx.cardview.widget.CardView>
+
+        <androidx.cardview.widget.CardView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="10dp"
+            app:cardCornerRadius="5dp">
+
+            <androidx.core.widget.NestedScrollView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+                    <!-- Primer LinearLayout (Horizontal) -->
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal">
+
+                        <!-- Contenido del primer LinearLayout -->
+                        <TextView
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_marginStart="20dp"
+                            android:layout_marginEnd="20dp"
+                            android:layout_weight="1"
+                            android:drawableStart="@drawable/ic_rectangle"
+                            android:gravity="center"
+                            android:textStyle="bold"
+                            android:text="Ocupado"
+                            android:textSize="14sp" />
+
+                        <TextView
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_marginStart="20dp"
+                            android:layout_marginEnd="20dp"
+                            android:layout_weight="1"
+                            android:drawableStart="@drawable/ic_rec_avalaible"
+                            android:gravity="center"
+                            android:textStyle="bold"
+                            android:text="Disponible"
+                            android:textSize="14sp" />
+
+                        <TextView
+                            android:id="@+id/tvChairSelected"
+                            android:visibility="gone"
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_marginStart="20dp"
+                            android:layout_marginEnd="20dp"
+                            android:layout_weight="1"
+                            android:drawableStart="@drawable/ic_your_site"
+                            android:gravity="center"
+                            android:textStyle="bold"
+                            android:text="Tu asiento"
+                            android:textSize="14sp" />
+                    </LinearLayout>
+
+                    <!-- Segundo LinearLayout (Vertical) -->
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="15dp"
+                        android:orientation="vertical">
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginBottom="4dp"
+                            android:layout_weight="100"
+                            android:orientation="horizontal">
+
+                            <LinearLayout
+                                android:layout_width="0dp"
+                                android:layout_height="wrap_content"
+                                android:layout_weight="50"
+                                android:gravity="center">
+
+                                <TextView
+                                    android:layout_width="36dp"
+                                    android:layout_height="wrap_content"
+                                    android:layout_marginEnd="4dp"
+                                    android:text="A"
+                                    android:textAlignment="center"
+                                    android:textColor="#c3c3c3"
+                                    android:textSize="18sp"
+                                    android:textStyle="bold" />
+
+                                <TextView
+                                    android:layout_width="36dp"
+                                    android:layout_height="wrap_content"
+                                    android:layout_marginStart="4dp"
+                                    android:text="B"
+                                    android:textAlignment="center"
+                                    android:textColor="#c3c3c3"
+                                    android:textSize="18sp"
+                                    android:textStyle="bold" />
+
+
+                            </LinearLayout>
+
+                            <LinearLayout
+                                android:layout_width="0dp"
+                                android:layout_height="wrap_content"
+                                android:layout_weight="50"
+                                android:gravity="center">
+
+                                <TextView
+                                    android:layout_width="36dp"
+                                    android:layout_height="wrap_content"
+                                    android:layout_marginEnd="4dp"
+                                    android:text="C"
+                                    android:textAlignment="center"
+                                    android:textColor="#c3c3c3"
+                                    android:textSize="18sp"
+                                    android:textStyle="bold" />
+
+                                <TextView
+                                    android:layout_width="36dp"
+                                    android:layout_height="wrap_content"
+                                    android:layout_marginStart="4dp"
+                                    android:text="D"
+                                    android:textAlignment="center"
+                                    android:textColor="#c3c3c3"
+                                    android:textSize="18sp"
+                                    android:textStyle="bold" />
+
+                            </LinearLayout>
+
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginBottom="8dp"
+                            android:layout_weight="100"
+                            android:orientation="horizontal"
+                            android:gravity="center_horizontal">
+
+                            <RelativeLayout
+                                android:id="@+id/rl1"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_marginEnd="4dp">
+
+                                <ImageView
+                                    android:id="@+id/iv1"
+                                    android:layout_width="36dp"
+                                    android:layout_height="36dp"
+                                    android:src="@drawable/ic_rectangle" />
+
+                                <TextView
+                                    android:id="@+id/tv1"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_centerInParent="true"
+                                    android:text="1"
+                                    android:textColor="@android:color/black"
+                                    android:textSize="12sp" />
+                            </RelativeLayout>
+
+                            <!-- Segundo asiento con número -->
+                            <RelativeLayout
+                                android:id="@+id/rl2"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_marginStart="4dp"
+                                android:layout_marginEnd="110dp">
+
+                                <ImageView
+                                    android:id="@+id/iv2"
+                                    android:layout_width="36dp"
+                                    android:layout_height="36dp"
+                                    android:src="@drawable/ic_rec_avalaible" />
+
+                                <TextView
+                                    android:id="@+id/tv2"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_centerInParent="true"
+                                    android:text="2"
+                                    android:textColor="@android:color/black"
+                                    android:textSize="12sp" />
+                            </RelativeLayout>
+
+                            <RelativeLayout
+                                android:id="@+id/rl3"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_marginEnd="4dp">
+
+                                <ImageView
+                                    android:id="@+id/iv3"
+                                    android:layout_width="36dp"
+                                    android:layout_height="36dp"
+                                    android:src="@drawable/ic_rectangle" />
+
+                                <TextView
+                                    android:id="@+id/tv3"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_centerInParent="true"
+                                    android:text="3"
+                                    android:textColor="@android:color/black"
+                                    android:textSize="12sp" />
+                            </RelativeLayout>
+
+                            <!-- Segundo asiento con número -->
+                            <RelativeLayout
+                                android:id="@+id/rl4"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_marginStart="4dp">
+
+                                <ImageView
+                                    android:id="@+id/iv4"
+                                    android:layout_width="36dp"
+                                    android:layout_height="36dp"
+                                    android:src="@drawable/ic_rec_avalaible" />
+
+                                <TextView
+                                    android:id="@+id/tv4"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_centerInParent="true"
+                                    android:text="4"
+                                    android:textColor="@android:color/black"
+                                    android:textSize="12sp" />
+                            </RelativeLayout>
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginBottom="8dp"
+                            android:layout_weight="100"
+                            android:orientation="horizontal"
+                            android:gravity="center_horizontal">
+
+                            <RelativeLayout
+                                android:id="@+id/rl5"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_marginEnd="4dp">
+
+                                <ImageView
+                                    android:id="@+id/iv5"
+                                    android:layout_width="36dp"
+                                    android:layout_height="36dp"
+                                    android:src="@drawable/ic_rectangle" />
+
+                                <TextView
+                                    android:id="@+id/tv5"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_centerInParent="true"
+                                    android:text="5"
+                                    android:textColor="@android:color/black"
+                                    android:textSize="12sp" />
+                            </RelativeLayout>
+
+                            <!-- Segundo asiento con número -->
+                            <RelativeLayout
+                                android:id="@+id/rl6"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_marginStart="4dp"
+                                android:layout_marginEnd="110dp">
+
+                                <ImageView
+                                    android:id="@+id/iv6"
+                                    android:layout_width="36dp"
+                                    android:layout_height="36dp"
+                                    android:src="@drawable/ic_rec_avalaible" />
+
+                                <TextView
+                                    android:id="@+id/tv6"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_centerInParent="true"
+                                    android:text="6"
+                                    android:textColor="@android:color/black"
+                                    android:textSize="12sp" />
+                            </RelativeLayout>
+
+                            <RelativeLayout
+                                android:id="@+id/rl7"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_marginEnd="4dp">
+
+                                <ImageView
+                                    android:id="@+id/iv7"
+                                    android:layout_width="36dp"
+                                    android:layout_height="36dp"
+                                    android:src="@drawable/ic_rectangle" />
+
+                                <TextView
+                                    android:id="@+id/tv7"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_centerInParent="true"
+                                    android:text="7"
+                                    android:textColor="@android:color/black"
+                                    android:textSize="12sp" />
+                            </RelativeLayout>
+
+                            <!-- Segundo asiento con número -->
+                            <RelativeLayout
+                                android:id="@+id/rl8"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_marginStart="4dp">
+
+                                <ImageView
+                                    android:id="@+id/iv8"
+                                    android:layout_width="36dp"
+                                    android:layout_height="36dp"
+                                    android:src="@drawable/ic_rec_avalaible" />
+
+                                <TextView
+                                    android:id="@+id/tv8"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_centerInParent="true"
+                                    android:text="8"
+                                    android:textColor="@android:color/black"
+                                    android:textSize="12sp" />
+                            </RelativeLayout>
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginBottom="8dp"
+                            android:layout_weight="100"
+                            android:orientation="horizontal"
+                            android:gravity="center_horizontal">
+
+                            <RelativeLayout
+                                android:id="@+id/rl9"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_marginEnd="4dp">
+
+                                <ImageView
+                                    android:id="@+id/iv9"
+                                    android:layout_width="36dp"
+                                    android:layout_height="36dp"
+                                    android:src="@drawable/ic_rectangle" />
+
+                                <TextView
+                                    android:id="@+id/tv9"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_centerInParent="true"
+                                    android:text="9"
+                                    android:textColor="@android:color/black"
+                                    android:textSize="12sp" />
+                            </RelativeLayout>
+
+                            <!-- Segundo asiento con número -->
+                            <RelativeLayout
+                                android:id="@+id/rl10"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_marginStart="4dp"
+                                android:layout_marginEnd="110dp">
+
+                                <ImageView
+                                    android:id="@+id/iv10"
+                                    android:layout_width="36dp"
+                                    android:layout_height="36dp"
+                                    android:src="@drawable/ic_rec_avalaible" />
+
+                                <TextView
+                                    android:id="@+id/tv10"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_centerInParent="true"
+                                    android:text="10"
+                                    android:textColor="@android:color/black"
+                                    android:textSize="12sp" />
+                            </RelativeLayout>
+
+                            <RelativeLayout
+                                android:id="@+id/rl11"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_marginEnd="4dp">
+
+                                <ImageView
+                                    android:id="@+id/iv11"
+                                    android:layout_width="36dp"
+                                    android:layout_height="36dp"
+                                    android:src="@drawable/ic_rectangle" />
+
+                                <TextView
+                                    android:id="@+id/tv11"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_centerInParent="true"
+                                    android:text="11"
+                                    android:textColor="@android:color/black"
+                                    android:textSize="12sp" />
+                            </RelativeLayout>
+
+                            <!-- Segundo asiento con número -->
+                            <RelativeLayout
+                                android:id="@+id/rl12"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_marginStart="4dp">
+
+                                <ImageView
+                                    android:id="@+id/iv12"
+                                    android:layout_width="36dp"
+                                    android:layout_height="36dp"
+                                    android:src="@drawable/ic_rec_avalaible" />
+
+                                <TextView
+                                    android:id="@+id/tv12"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_centerInParent="true"
+                                    android:text="12"
+                                    android:textColor="@android:color/black"
+                                    android:textSize="12sp" />
+                            </RelativeLayout>
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginBottom="8dp"
+                            android:layout_weight="100"
+                            android:orientation="horizontal"
+                            android:gravity="center_horizontal">
+
+                            <RelativeLayout
+                                android:id="@+id/rl13"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_marginEnd="4dp">
+
+                                <ImageView
+                                    android:id="@+id/iv13"
+                                    android:layout_width="36dp"
+                                    android:layout_height="36dp"
+                                    android:src="@drawable/ic_rectangle" />
+
+                                <TextView
+                                    android:id="@+id/tv13"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_centerInParent="true"
+                                    android:text="13"
+                                    android:textColor="@android:color/black"
+                                    android:textSize="12sp" />
+                            </RelativeLayout>
+
+                            <!-- Segundo asiento con número -->
+                            <RelativeLayout
+                                android:id="@+id/rl14"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_marginStart="4dp"
+                                android:layout_marginEnd="110dp">
+
+                                <ImageView
+                                    android:id="@+id/iv14"
+                                    android:layout_width="36dp"
+                                    android:layout_height="36dp"
+                                    android:src="@drawable/ic_rec_avalaible" />
+
+                                <TextView
+                                    android:id="@+id/tv14"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_centerInParent="true"
+                                    android:text="14"
+                                    android:textColor="@android:color/black"
+                                    android:textSize="12sp" />
+                            </RelativeLayout>
+
+                            <RelativeLayout
+                                android:id="@+id/rl15"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_marginEnd="4dp">
+
+                                <ImageView
+                                    android:id="@+id/iv15"
+                                    android:layout_width="36dp"
+                                    android:layout_height="36dp"
+                                    android:src="@drawable/ic_rectangle" />
+
+                                <TextView
+                                    android:id="@+id/tv15"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_centerInParent="true"
+                                    android:text="15"
+                                    android:textColor="@android:color/black"
+                                    android:textSize="12sp" />
+                            </RelativeLayout>
+
+                            <!-- Segundo asiento con número -->
+                            <RelativeLayout
+                                android:id="@+id/rl16"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_marginStart="4dp">
+
+                                <ImageView
+                                    android:id="@+id/iv16"
+                                    android:layout_width="36dp"
+                                    android:layout_height="36dp"
+                                    android:src="@drawable/ic_rec_avalaible" />
+
+                                <TextView
+                                    android:id="@+id/tv16"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_centerInParent="true"
+                                    android:text="16"
+                                    android:textColor="@android:color/black"
+                                    android:textSize="12sp" />
+                            </RelativeLayout>
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginBottom="8dp"
+                            android:layout_weight="100"
+                            android:orientation="horizontal"
+                            android:gravity="center_horizontal">
+
+                            <RelativeLayout
+                                android:id="@+id/rl17"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_marginEnd="4dp">
+
+                                <ImageView
+                                    android:id="@+id/iv17"
+                                    android:layout_width="36dp"
+                                    android:layout_height="36dp"
+                                    android:src="@drawable/ic_rectangle" />
+
+                                <TextView
+                                    android:id="@+id/tv17"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_centerInParent="true"
+                                    android:text="17"
+                                    android:textColor="@android:color/black"
+                                    android:textSize="12sp" />
+                            </RelativeLayout>
+
+                            <!-- Segundo asiento con número -->
+                            <RelativeLayout
+                                android:id="@+id/rl18"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_marginStart="4dp"
+                                android:layout_marginEnd="110dp">
+
+                                <ImageView
+                                    android:id="@+id/iv18"
+                                    android:layout_width="36dp"
+                                    android:layout_height="36dp"
+                                    android:src="@drawable/ic_rec_avalaible" />
+
+                                <TextView
+                                    android:id="@+id/tv18"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_centerInParent="true"
+                                    android:text="18"
+                                    android:textColor="@android:color/black"
+                                    android:textSize="12sp" />
+                            </RelativeLayout>
+
+                            <RelativeLayout
+                                android:id="@+id/rl19"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_marginEnd="4dp">
+
+                                <ImageView
+                                    android:id="@+id/iv19"
+                                    android:layout_width="36dp"
+                                    android:layout_height="36dp"
+                                    android:src="@drawable/ic_rectangle" />
+
+                                <TextView
+                                    android:id="@+id/tv19"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_centerInParent="true"
+                                    android:text="19"
+                                    android:textColor="@android:color/black"
+                                    android:textSize="12sp" />
+                            </RelativeLayout>
+
+                            <!-- Segundo asiento con número -->
+                            <RelativeLayout
+                                android:id="@+id/rl20"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_marginStart="4dp">
+
+                                <ImageView
+                                    android:id="@+id/iv20"
+                                    android:layout_width="36dp"
+                                    android:layout_height="36dp"
+                                    android:src="@drawable/ic_rec_avalaible" />
+
+                                <TextView
+                                    android:id="@+id/tv20"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_centerInParent="true"
+                                    android:text="20"
+                                    android:textColor="@android:color/black"
+                                    android:textSize="12sp" />
+                            </RelativeLayout>
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginBottom="8dp"
+                            android:layout_weight="100"
+                            android:orientation="horizontal"
+                            android:gravity="center_horizontal">
+
+                            <RelativeLayout
+                                android:id="@+id/rl21"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_marginEnd="4dp">
+
+                                <ImageView
+                                    android:id="@+id/iv21"
+                                    android:layout_width="36dp"
+                                    android:layout_height="36dp"
+                                    android:src="@drawable/ic_rectangle" />
+
+                                <TextView
+                                    android:id="@+id/tv21"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_centerInParent="true"
+                                    android:text="21"
+                                    android:textColor="@android:color/black"
+                                    android:textSize="12sp" />
+                            </RelativeLayout>
+
+                            <!-- Segundo asiento con número -->
+                            <RelativeLayout
+                                android:id="@+id/rl22"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_marginStart="4dp"
+                                android:layout_marginEnd="110dp">
+
+                                <ImageView
+                                    android:id="@+id/iv22"
+                                    android:layout_width="36dp"
+                                    android:layout_height="36dp"
+                                    android:src="@drawable/ic_rec_avalaible" />
+
+                                <TextView
+                                    android:id="@+id/tv22"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_centerInParent="true"
+                                    android:text="22"
+                                    android:textColor="@android:color/black"
+                                    android:textSize="12sp" />
+                            </RelativeLayout>
+
+                            <RelativeLayout
+                                android:id="@+id/rl23"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_marginEnd="4dp">
+
+                                <ImageView
+                                    android:id="@+id/iv23"
+                                    android:layout_width="36dp"
+                                    android:layout_height="36dp"
+                                    android:src="@drawable/ic_rectangle" />
+
+                                <TextView
+                                    android:id="@+id/tv23"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_centerInParent="true"
+                                    android:text="23"
+                                    android:textColor="@android:color/black"
+                                    android:textSize="12sp" />
+                            </RelativeLayout>
+
+                            <!-- Segundo asiento con número -->
+                            <RelativeLayout
+                                android:id="@+id/rl24"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_marginStart="4dp">
+
+                                <ImageView
+                                    android:id="@+id/iv24"
+                                    android:layout_width="36dp"
+                                    android:layout_height="36dp"
+                                    android:src="@drawable/ic_rec_avalaible" />
+
+                                <TextView
+                                    android:id="@+id/tv24"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_centerInParent="true"
+                                    android:text="24"
+                                    android:textColor="@android:color/black"
+                                    android:textSize="12sp" />
+                            </RelativeLayout>
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginBottom="8dp"
+                            android:layout_weight="100"
+                            android:orientation="horizontal"
+                            android:gravity="center_horizontal">
+
+                            <RelativeLayout
+                                android:id="@+id/rl25"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_marginEnd="4dp">
+
+                                <ImageView
+                                    android:id="@+id/iv25"
+                                    android:layout_width="36dp"
+                                    android:layout_height="36dp"
+                                    android:src="@drawable/ic_rectangle" />
+
+                                <TextView
+                                    android:id="@+id/tv25"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_centerInParent="true"
+                                    android:text="25"
+                                    android:textColor="@android:color/black"
+                                    android:textSize="12sp" />
+                            </RelativeLayout>
+
+                            <!-- Segundo asiento con número -->
+                            <RelativeLayout
+                                android:id="@+id/rl26"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_marginStart="4dp"
+                                android:layout_marginEnd="110dp">
+
+                                <ImageView
+                                    android:id="@+id/iv26"
+                                    android:layout_width="36dp"
+                                    android:layout_height="36dp"
+                                    android:src="@drawable/ic_rec_avalaible" />
+
+                                <TextView
+                                    android:id="@+id/tv26"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_centerInParent="true"
+                                    android:text="26"
+                                    android:textColor="@android:color/black"
+                                    android:textSize="12sp" />
+                            </RelativeLayout>
+
+                            <RelativeLayout
+                                android:id="@+id/rl27"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_marginEnd="4dp">
+
+                                <ImageView
+                                    android:id="@+id/iv27"
+                                    android:layout_width="36dp"
+                                    android:layout_height="36dp"
+                                    android:src="@drawable/ic_rectangle" />
+
+                                <TextView
+                                    android:id="@+id/tv27"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_centerInParent="true"
+                                    android:text="27"
+                                    android:textColor="@android:color/black"
+                                    android:textSize="12sp" />
+                            </RelativeLayout>
+
+                            <!-- Segundo asiento con número -->
+                            <RelativeLayout
+                                android:id="@+id/rl28"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_marginStart="4dp">
+
+                                <ImageView
+                                    android:id="@+id/iv28"
+                                    android:layout_width="36dp"
+                                    android:layout_height="36dp"
+                                    android:src="@drawable/ic_rec_avalaible" />
+
+                                <TextView
+                                    android:id="@+id/tv28"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_centerInParent="true"
+                                    android:text="28"
+                                    android:textColor="@android:color/black"
+                                    android:textSize="12sp" />
+                            </RelativeLayout>
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginBottom="8dp"
+                            android:layout_weight="100"
+                            android:orientation="horizontal"
+                            android:gravity="center_horizontal">
+
+                            <RelativeLayout
+                                android:id="@+id/rl29"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_marginEnd="4dp">
+
+                                <ImageView
+                                    android:id="@+id/iv29"
+                                    android:layout_width="36dp"
+                                    android:layout_height="36dp"
+                                    android:src="@drawable/ic_rectangle" />
+
+                                <TextView
+                                    android:id="@+id/tv29"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_centerInParent="true"
+                                    android:text="29"
+                                    android:textColor="@android:color/black"
+                                    android:textSize="12sp" />
+                            </RelativeLayout>
+
+                            <!-- Segundo asiento con número -->
+                            <RelativeLayout
+                                android:id="@+id/rl30"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_marginStart="4dp"
+                                android:layout_marginEnd="110dp">
+
+                                <ImageView
+                                    android:id="@+id/iv30"
+                                    android:layout_width="36dp"
+                                    android:layout_height="36dp"
+                                    android:src="@drawable/ic_rec_avalaible" />
+
+                                <TextView
+                                    android:id="@+id/tv30"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_centerInParent="true"
+                                    android:text="30"
+                                    android:textColor="@android:color/black"
+                                    android:textSize="12sp" />
+                            </RelativeLayout>
+
+                            <RelativeLayout
+                                android:id="@+id/rl31"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_marginEnd="4dp">
+
+                                <ImageView
+                                    android:id="@+id/iv31"
+                                    android:layout_width="36dp"
+                                    android:layout_height="36dp"
+                                    android:src="@drawable/ic_rectangle" />
+
+                                <TextView
+                                    android:id="@+id/tv31"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_centerInParent="true"
+                                    android:text="31"
+                                    android:textColor="@android:color/black"
+                                    android:textSize="12sp" />
+                            </RelativeLayout>
+
+                            <!-- Segundo asiento con número -->
+                            <RelativeLayout
+                                android:id="@+id/rl32"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_marginStart="4dp">
+
+                                <ImageView
+                                    android:id="@+id/iv32"
+                                    android:layout_width="36dp"
+                                    android:layout_height="36dp"
+                                    android:src="@drawable/ic_rec_avalaible" />
+
+                                <TextView
+                                    android:id="@+id/tv32"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_centerInParent="true"
+                                    android:text="32"
+                                    android:textColor="@android:color/black"
+                                    android:textSize="12sp" />
+                            </RelativeLayout>
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginBottom="8dp"
+                            android:layout_weight="100"
+                            android:orientation="horizontal"
+                            android:gravity="center_horizontal">
+
+                            <RelativeLayout
+                                android:id="@+id/rl33"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_marginEnd="4dp">
+
+                                <ImageView
+                                    android:id="@+id/iv33"
+                                    android:layout_width="36dp"
+                                    android:layout_height="36dp"
+                                    android:src="@drawable/ic_rectangle" />
+
+                                <TextView
+                                    android:id="@+id/tv33"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_centerInParent="true"
+                                    android:text="33"
+                                    android:textColor="@android:color/black"
+                                    android:textSize="12sp" />
+                            </RelativeLayout>
+
+                            <!-- Segundo asiento con número -->
+                            <RelativeLayout
+                                android:id="@+id/rl34"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_marginStart="4dp"
+                                android:layout_marginEnd="110dp">
+
+                                <ImageView
+                                    android:id="@+id/iv34"
+                                    android:layout_width="36dp"
+                                    android:layout_height="36dp"
+                                    android:src="@drawable/ic_rec_avalaible" />
+
+                                <TextView
+                                    android:id="@+id/tv34"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_centerInParent="true"
+                                    android:text="34"
+                                    android:textColor="@android:color/black"
+                                    android:textSize="12sp" />
+                            </RelativeLayout>
+
+                            <RelativeLayout
+                                android:id="@+id/rl35"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_marginEnd="4dp">
+
+                                <ImageView
+                                    android:id="@+id/iv35"
+                                    android:layout_width="36dp"
+                                    android:layout_height="36dp"
+                                    android:src="@drawable/ic_rectangle" />
+
+                                <TextView
+                                    android:id="@+id/tv35"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_centerInParent="true"
+                                    android:text="35"
+                                    android:textColor="@android:color/black"
+                                    android:textSize="12sp" />
+                            </RelativeLayout>
+
+                            <!-- Segundo asiento con número -->
+                            <RelativeLayout
+                                android:id="@+id/rl36"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_marginStart="4dp">
+
+                                <ImageView
+                                    android:id="@+id/iv36"
+                                    android:layout_width="36dp"
+                                    android:layout_height="36dp"
+                                    android:src="@drawable/ic_rec_avalaible" />
+
+                                <TextView
+                                    android:id="@+id/tv36"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_centerInParent="true"
+                                    android:text="36"
+                                    android:textColor="@android:color/black"
+                                    android:textSize="12sp" />
+                            </RelativeLayout>
+                        </LinearLayout>
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginBottom="8dp"
+                            android:layout_weight="100"
+                            android:orientation="horizontal"
+                            android:gravity="center_horizontal">
+
+                            <RelativeLayout
+                                android:id="@+id/rl37"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_marginEnd="4dp">
+
+                                <ImageView
+                                    android:id="@+id/iv37"
+                                    android:layout_width="36dp"
+                                    android:layout_height="36dp"
+                                    android:src="@drawable/ic_rectangle" />
+
+                                <TextView
+                                    android:id="@+id/tv37"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_centerInParent="true"
+                                    android:text="37"
+                                    android:textColor="@android:color/black"
+                                    android:textSize="12sp" />
+                            </RelativeLayout>
+
+                            <!-- Segundo asiento con número -->
+                            <RelativeLayout
+                                android:id="@+id/rl38"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_marginStart="4dp"
+                                android:layout_marginEnd="110dp">
+
+                                <ImageView
+                                    android:id="@+id/iv38"
+                                    android:layout_width="36dp"
+                                    android:layout_height="36dp"
+                                    android:src="@drawable/ic_rec_avalaible" />
+
+                                <TextView
+                                    android:id="@+id/tv38"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_centerInParent="true"
+                                    android:text="38"
+                                    android:textColor="@android:color/black"
+                                    android:textSize="12sp" />
+                            </RelativeLayout>
+
+                            <RelativeLayout
+                                android:id="@+id/rl39"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_marginEnd="4dp">
+
+                                <ImageView
+                                    android:id="@+id/iv39"
+                                    android:layout_width="36dp"
+                                    android:layout_height="36dp"
+                                    android:src="@drawable/ic_rectangle" />
+
+                                <TextView
+                                    android:id="@+id/tv39"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_centerInParent="true"
+                                    android:text="39"
+                                    android:textColor="@android:color/black"
+                                    android:textSize="12sp" />
+                            </RelativeLayout>
+
+                            <!-- Segundo asiento con número -->
+                            <RelativeLayout
+                                android:id="@+id/rl40"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_marginStart="4dp">
+
+                                <ImageView
+                                    android:id="@+id/iv40"
+                                    android:layout_width="36dp"
+                                    android:layout_height="36dp"
+                                    android:src="@drawable/ic_rec_avalaible" />
+
+                                <TextView
+                                    android:id="@+id/tv40"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_centerInParent="true"
+                                    android:text="40"
+                                    android:textColor="@android:color/black"
+                                    android:textSize="12sp" />
+                            </RelativeLayout>
+                        </LinearLayout>
+                        <Button
+                            android:visibility="gone"
+                            android:id="@+id/btnNextBuy3"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginStart="30dp"
+                            android:layout_marginEnd="30dp"
+                            android:layout_marginBottom="30dp"
+                            android:text="CONTINUAR"/>
+                    </LinearLayout>
+                </LinearLayout>
+            </androidx.core.widget.NestedScrollView>
+
+
+
+        </androidx.cardview.widget.CardView>
+
+    </LinearLayout>
+</LinearLayout>

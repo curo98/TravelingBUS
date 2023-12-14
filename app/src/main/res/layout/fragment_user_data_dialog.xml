@@ -1,0 +1,51 @@
+<!-- fragment_user_data_dialog.xml -->
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textColor="@color/font"
+        android:gravity="center"
+        android:textStyle="bold"
+        android:padding="30dp"
+        android:text="INGRESA TUS DATOS PERSONALES"/>
+
+    <EditText
+        android:id="@+id/etFirstName"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Nombres"
+        android:inputType="textPersonName"
+        android:maxLines="1"/>
+
+    <EditText
+        android:id="@+id/etLastName"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Apellidos"
+        android:inputType="textPersonName"
+        android:maxLines="1"/>
+
+    <EditText
+        android:id="@+id/etDni"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:inputType="number"
+        android:hint="DNI"
+        android:maxLength="8"
+        android:maxLines="1"/>
+
+    <Button
+        android:layout_marginTop="30dp"
+        android:id="@+id/btnSave"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/rounded_button"
+        android:textColor="@color/font"
+        android:textStyle="bold"
+        android:text="CONTINUAR" />
+</LinearLayout>
